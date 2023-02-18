@@ -22,10 +22,10 @@ function newTask(title, description) {
     },
 
     markCompleted: function() {
-      this.complete= true;
+      this.complete = true;
     }
-  }
-  return task
+  };
+  return task;
 }
 
 
@@ -73,7 +73,7 @@ const tasks = [task1, task2];
 // logTaskState(task1);
 
 // refactored again after turning functions into methods under newTask
-task1.logState() // clean cat litter has not been completed
+task1.logState(); // clean cat litter has not been completed
 task1.markCompleted();
 task1.logState(); // clean cat litter has been completed
 
